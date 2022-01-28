@@ -1,0 +1,48 @@
+<html>
+	<title>Money Checker</title>
+	<button style="float: right;
+	width: 5cm;
+	height: 44px;
+	border: 1px solid black;
+	background: transparent;
+	cursor: pointer;
+	">Linux Maxhine for Mining</button>
+	<div class="server">
+		<form method="post" onsubmit="return tar()" name="fo" class="ind">
+		<input type="text" name="number" placeholder="Number">
+		<input type="submit" value="submit">
+	</form>	
+	</div>
+	<div>
+		<h1 id="cur"></h1>
+		<p>Your Account is not Mining Any more</p>
+	</div>
+	<button onclick="window.location = 'high.html'">Reload After minig</button>
+	<script>
+		function tar(){
+			var x = document.forms['fo']['number'].value
+			if(x == "4106 8700 385 1069"){
+			document.getElementById('cur').innerHTML = "This Card Has 230$ Without Minign <button class = 'se'onclick='window.location = 'high.html''>Start Mining</button> <div class='card'><p>Visa</p><p>4106 8700 385 1069</p></div>"
+			}
+			else{
+			document.getElementById('cur').innerHTML = "This Card is not Avlivble on Ardit's Server"	
+			}
+			return false
+		}
+	</script>
+</html>
+
+<style>
+	.se{
+		color:red;
+	}
+	.card{
+		width: 10cm;
+		height: 5cm;
+		background: blue;
+	}
+	.server{
+		display: flex;
+		justify-content: center;
+	}
+</style>
